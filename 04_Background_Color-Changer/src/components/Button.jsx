@@ -11,7 +11,6 @@ const buttonStyle = {
     borderRadius:"5px"
 };
 
-
 const clickHandle = ()=>{
     document.body.style.backgroundColor = color;
 };
