@@ -7,13 +7,12 @@ const App = () => {
   const [password, setPassword] = useState('');
   const passwordref = useRef(null);
 
-//useref hook
+  //useref hook
 
-const copypasswordtoclipboard = useCallback(()=>{
-  passwordref.current?.select();
-window.navigator.clipboard.writeText(password);
-
-},[password]);
+  const copypasswordtoclipboard = useCallback(() => {
+    passwordref.current?.select();
+    window.navigator.clipboard.writeText(password)
+  }, [password]);
 
   const passwordGenerated = useCallback(
     () => {
